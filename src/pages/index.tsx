@@ -1,7 +1,11 @@
 import * as React from 'react';
-import { AiFillCar } from 'react-icons/ai';
+import {
+    AiFillCar,
+    AiFillClockCircle,
+    AiFillDollarCircle,
+} from 'react-icons/ai';
 import { BsArrowRightShort } from 'react-icons/bs';
-import { FaHandshake } from 'react-icons/fa';
+import { FaHandshake, FaStopwatch } from 'react-icons/fa';
 import { GiAutoRepair } from 'react-icons/gi';
 import { GoChecklist } from 'react-icons/go';
 
@@ -64,7 +68,7 @@ export default function HomePage() {
                             <p>Pembelian Kendaraan</p>
                         </div>
                         <div className='items-center space-y-2 text-center transition duration-300 hover:text-red-500'>
-                            <FaHandshake className='mx-auto text-5xl' />
+                            <AiFillDollarCircle className='mx-auto text-5xl' />
                             <p>Jual Kendaraan</p>
                         </div>
                         <div className='items-center space-y-2 text-center transition duration-300 hover:text-red-500'>
@@ -88,12 +92,12 @@ export default function HomePage() {
                         <div className='grid grid-cols-1 gap-5 md:grid-cols-3'>
                             <div className='p-5 space-y-4 transition duration-300 border border-gray-100 rounded hover:scale-105 hover:border-red-500'>
                                 <div className='items-center justify-center w-24 p-5 bg-red-200 rounded'>
-                                    <GiAutoRepair className='text-5xl text-red-600' />
+                                    <FaHandshake className='text-5xl text-red-600' />
                                 </div>
-                                <h3>Problem Solver</h3>
+                                <h3>Deal Terbaik</h3>
                                 <p className='text-gray-600'>
-                                    Lorem Ipsum dolor amit. Lorem Ipsum dolor
-                                    amit. Lorem Ipsum dolor amit.
+                                    Dapatkan deal dengan harga terbaik untuk
+                                    mobil impianmu sekarang juga!
                                 </p>
                                 <CustomLink href='/'>
                                     <div className='flex items-center space-x-1'>
@@ -104,12 +108,12 @@ export default function HomePage() {
                             </div>
                             <div className='p-5 space-y-4 transition duration-300 border border-gray-100 rounded hover:scale-105 hover:border-red-500'>
                                 <div className='items-center justify-center w-24 p-5 bg-red-200 rounded'>
-                                    <GiAutoRepair className='text-5xl text-red-600' />
+                                    <FaStopwatch className='text-5xl text-red-600' />
                                 </div>
-                                <h3>Problem Solver</h3>
+                                <h3>Service Cepat</h3>
                                 <p className='text-gray-600'>
-                                    Lorem Ipsum dolor amit. Lorem Ipsum dolor
-                                    amit. Lorem Ipsum dolor amit.
+                                    Jaminan waktu yang cepat untuk melayani
+                                    service kendaraan anda
                                 </p>
                                 <CustomLink href='/'>
                                     <div className='flex items-center space-x-1'>
@@ -120,12 +124,11 @@ export default function HomePage() {
                             </div>
                             <div className='p-5 space-y-4 transition duration-300 border border-gray-100 rounded hover:scale-105 hover:border-red-500'>
                                 <div className='items-center justify-center w-24 p-5 bg-red-200 rounded'>
-                                    <GiAutoRepair className='text-5xl text-red-600' />
+                                    <AiFillClockCircle className='text-5xl text-red-600' />
                                 </div>
-                                <h3>Problem Solver</h3>
+                                <h3>Layanan 24/7</h3>
                                 <p className='text-gray-600'>
-                                    Lorem Ipsum dolor amit. Lorem Ipsum dolor
-                                    amit. Lorem Ipsum dolor amit.
+                                    Siap melayani kebutuhan anda selama 24 jam
                                 </p>
                                 <CustomLink href='/'>
                                     <div className='flex items-center space-x-1'>
