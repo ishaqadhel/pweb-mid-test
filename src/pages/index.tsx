@@ -1,9 +1,11 @@
 import * as React from 'react';
+import { BsArrowRightShort } from 'react-icons/bs';
 import { GiAutoRepair } from 'react-icons/gi';
 
 import Layout from '@/components/layout/Base';
 import BaseLink from '@/components/shared/BaseLink';
 import Button from '@/components/shared/Button';
+import CustomLink from '@/components/shared/CustomLink';
 import NextImage from '@/components/shared/NextImage';
 import Seo from '@/components/shared/Seo';
 
@@ -71,6 +73,67 @@ export default function HomePage() {
                     </div>
                 </section>
                 {/* End of Feature Highlight Section */}
+
+                {/* Benefit Section */}
+                <section className='py-10 md:py-20'>
+                    <div className='space-y-10 layout'>
+                        <div className='space-y-2 text-center'>
+                            <p className='text-gray-500'>Benefit From Us</p>
+                            <h2>We Have the Plan for you to Give You Best</h2>
+                        </div>
+                        <div className='grid grid-cols-1 gap-5 md:grid-cols-3'>
+                            <div className='p-5 space-y-4 transition duration-300 border border-gray-100 rounded hover:scale-105 hover:border-red-500'>
+                                <div className='items-center justify-center w-24 p-5 bg-red-200 rounded'>
+                                    <GiAutoRepair className='text-5xl text-red-600' />
+                                </div>
+                                <h3>Problem Solver</h3>
+                                <p className='text-gray-600'>
+                                    Lorem Ipsum dolor amit. Lorem Ipsum dolor
+                                    amit. Lorem Ipsum dolor amit.
+                                </p>
+                                <CustomLink href='/'>
+                                    <div className='flex items-center space-x-1'>
+                                        <p>Lihat Selengkapnya</p>
+                                        <BsArrowRightShort />
+                                    </div>
+                                </CustomLink>
+                            </div>
+                            <div className='p-5 space-y-4 transition duration-300 border border-gray-100 rounded hover:scale-105 hover:border-red-500'>
+                                <div className='items-center justify-center w-24 p-5 bg-red-200 rounded'>
+                                    <GiAutoRepair className='text-5xl text-red-600' />
+                                </div>
+                                <h3>Problem Solver</h3>
+                                <p className='text-gray-600'>
+                                    Lorem Ipsum dolor amit. Lorem Ipsum dolor
+                                    amit. Lorem Ipsum dolor amit.
+                                </p>
+                                <CustomLink href='/'>
+                                    <div className='flex items-center space-x-1'>
+                                        <p>Lihat Selengkapnya</p>
+                                        <BsArrowRightShort />
+                                    </div>
+                                </CustomLink>
+                            </div>
+                            <div className='p-5 space-y-4 transition duration-300 border border-gray-100 rounded hover:scale-105 hover:border-red-500'>
+                                <div className='items-center justify-center w-24 p-5 bg-red-200 rounded'>
+                                    <GiAutoRepair className='text-5xl text-red-600' />
+                                </div>
+                                <h3>Problem Solver</h3>
+                                <p className='text-gray-600'>
+                                    Lorem Ipsum dolor amit. Lorem Ipsum dolor
+                                    amit. Lorem Ipsum dolor amit.
+                                </p>
+                                <CustomLink href='/'>
+                                    <div className='flex items-center space-x-1'>
+                                        <p>Lihat Selengkapnya</p>
+                                        <BsArrowRightShort />
+                                    </div>
+                                </CustomLink>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* End of Benefit Section */}
             </main>
         </Layout>
     );
