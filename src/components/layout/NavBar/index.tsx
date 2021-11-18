@@ -38,16 +38,10 @@ export default function NavBar() {
                         Beranda
                     </BaseLink>
                     <BaseLink
-                        href='/'
+                        href='/booking'
                         className='font-semibold transition duration-500 hover:text-red-500'
                     >
                         Pesan Service
-                    </BaseLink>
-                    <BaseLink
-                        href='/'
-                        className='font-semibold transition duration-500 hover:text-red-500'
-                    >
-                        Bantuan
                     </BaseLink>
                     <BaseLink href='/login'>
                         <Button variant='red'>Login</Button>

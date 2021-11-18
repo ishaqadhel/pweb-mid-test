@@ -263,7 +263,7 @@ export default function HomePage() {
                                     </p>
                                 </div>
                                 <div>
-                                    <BaseLink href='/'>
+                                    <BaseLink href='/booking'>
                                         <Button variant='light'>
                                             Pesan Jasa Sekarang
                                         </Button>

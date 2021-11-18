@@ -2,12 +2,14 @@ import * as React from 'react';
 
 import Layout from '@/components/layout/Base';
 import BaseLink from '@/components/shared/BaseLink';
+import LiveChat from '@/components/shared/LiveChat';
 import Seo from '@/components/shared/Seo';
 
 export default function Login() {
     return (
         <Layout>
             <Seo />
+            <LiveChat />
             <div className='flex flex-col justify-center py-12 sm:px-6 lg:px-8'>
                 <div className='sm:mx-auto sm:w-full sm:max-w-md'>
                     <h2 className='mt-6 text-3xl font-extrabold text-center text-gray-900'>
