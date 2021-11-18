@@ -2,7 +2,7 @@
 import clsx from 'clsx';
 import * as React from 'react';
 
-import Layout from '@/components/layout/Layout';
+import Layout from '@/components/layout/Base';
 import BaseLink from '@/components/shared/BaseLink';
 import Button from '@/components/shared/Button';
 import ButtonLink from '@/components/shared/ButtonLink';

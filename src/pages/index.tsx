@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Layout from '@/components/layout/Layout';
+import Layout from '@/components/layout/Base';
 import ButtonLink from '@/components/shared/ButtonLink';
 import Seo from '@/components/shared/Seo';
 
