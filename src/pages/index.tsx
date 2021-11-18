@@ -33,8 +33,9 @@ export default function HomePage() {
                                 We Make Car Repair Hassle Free
                             </h1>
                             <p>
-                                Since the year 1972 we are always ready to give
-                                you one of the best service.
+                                Pemberian jasa penjualan, perawatan, perbaikan,
+                                dan penyediaan suku cadang terbaik sejak tahun
+                                1975.
                             </p>
                             <div>
                                 <BaseLink href='/'>
