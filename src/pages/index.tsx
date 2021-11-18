@@ -1,6 +1,4 @@
-import clsx from 'clsx';
 import * as React from 'react';
-import { GiHamburgerMenu } from 'react-icons/gi';
 
 import Layout from '@/components/layout/Base';
 import BaseLink from '@/components/shared/BaseLink';
@@ -9,59 +7,43 @@ import NextImage from '@/components/shared/NextImage';
 import Seo from '@/components/shared/Seo';
 
 export default function HomePage() {
-  return (
-    <Layout>
-      <Seo />
+    return (
+        <Layout>
+            <Seo />
 
-      <main>
-        <section className={clsx('py-4 md:py-6')}>
-          <div className='flex items-center py-4 mx-auto layout'>
-            <div className='flex-grow'>
-              <div className='flex items-center space-x-2'>
-                <div className='items-center'>
-                  <BaseLink href='/'>
-                    <NextImage
-                      className='w-32 md:w-36'
-                      src='/images/logo.png'
-                      alt='Auto-Logo'
-                      width={1600}
-                      height={399}
-                    />
-                  </BaseLink>
-                </div>
-              </div>
-            </div>
-            {/* Menu Mobile */}
-            <div className='flex items-center space-x-5 md:hidden'>
-              <GiHamburgerMenu className='text-xl' />
-            </div>
-            {/* End of Menu Mobile */}
-            <div className='items-center hidden space-x-5 md:flex'>
-              <BaseLink
-                href='/'
-                className='transition duration-500 hover:text-red-500'
-              >
-                Beranda
-              </BaseLink>
-              <BaseLink
-                href='/pricing'
-                className='transition duration-500 hover:text-red-500'
-              >
-                Pesan Service
-              </BaseLink>
-              <BaseLink
-                href='/'
-                className='transition duration-500 hover:text-red-500'
-              >
-                Bantuan
-              </BaseLink>
-              <BaseLink href='/'>
-                <Button variant='red'>Login</Button>
-              </BaseLink>
-            </div>
-          </div>
-        </section>
-      </main>
-    </Layout>
-  );
+            <main>
+                {/* Header Section */}
+                <section className='py-10 md:py-20'>
+                    <div className='space-y-10 md:flex md:flex-row-reverse md:space-x-5 md:space-y-0 layout'>
+                        <div className='md:w-1/2'>
+                            <NextImage
+                                className='w-full'
+                                src='/images/car/fortuner.png'
+                                alt='car'
+                                width={688}
+                                height={408}
+                            />
+                        </div>
+                        <div className='space-y-5 md:w-1/2'>
+                            <h1 className='text-4xl md:text-6xl'>
+                                We Make Car Repair Hassle Free
+                            </h1>
+                            <p>
+                                Since the year 1972 we are always ready to give
+                                you one of the best service.
+                            </p>
+                            <div>
+                                <BaseLink href='/'>
+                                    <Button variant='red'>
+                                        Lihat Keuntungan
+                                    </Button>
+                                </BaseLink>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* End of Header Section */}
+            </main>
+        </Layout>
+    );
 }
