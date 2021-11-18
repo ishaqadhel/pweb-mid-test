@@ -1,7 +1,11 @@
+import clsx from 'clsx';
 import * as React from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 import Layout from '@/components/layout/Base';
-import ButtonLink from '@/components/shared/ButtonLink';
+import BaseLink from '@/components/shared/BaseLink';
+import Button from '@/components/shared/Button';
+import NextImage from '@/components/shared/NextImage';
 import Seo from '@/components/shared/Seo';
 
 export default function HomePage() {
@@ -10,17 +14,51 @@ export default function HomePage() {
       <Seo />
 
       <main>
-        <section className='bg-dark'>
-          <div className='flex flex-col items-center justify-center min-h-screen text-center text-white layout'>
-            <h1>Next.js + Tailwind CSS + TypeScript Starter</h1>
-            <p className='mt-2 text-sm text-gray-300'>
-              A starter for Next.js, Tailwind CSS, and TypeScript with Absolute
-              Import, Seo, Link component, pre-configured with Husky{' '}
-            </p>
-
-            <ButtonLink className='mt-6' href='/components' variant='light'>
-              See all components
-            </ButtonLink>
+        <section className={clsx('py-4 md:py-6')}>
+          <div className='flex items-center py-4 mx-auto layout'>
+            <div className='flex-grow'>
+              <div className='flex items-center space-x-2'>
+                <div className='items-center'>
+                  <BaseLink href='/'>
+                    <NextImage
+                      className='w-32 md:w-36'
+                      src='/images/logo.png'
+                      alt='Auto-Logo'
+                      width={1600}
+                      height={399}
+                    />
+                  </BaseLink>
+                </div>
+              </div>
+            </div>
+            {/* Menu Mobile */}
+            <div className='flex items-center space-x-5 md:hidden'>
+              <GiHamburgerMenu className='text-xl' />
+            </div>
+            {/* End of Menu Mobile */}
+            <div className='items-center hidden space-x-5 md:flex'>
+              <BaseLink
+                href='/'
+                className='transition duration-500 hover:text-red-500'
+              >
+                Beranda
+              </BaseLink>
+              <BaseLink
+                href='/pricing'
+                className='transition duration-500 hover:text-red-500'
+              >
+                Pesan Service
+              </BaseLink>
+              <BaseLink
+                href='/'
+                className='transition duration-500 hover:text-red-500'
+              >
+                Bantuan
+              </BaseLink>
+              <BaseLink href='/'>
+                <Button variant='red'>Login</Button>
+              </BaseLink>
+            </div>
           </div>
         </section>
       </main>

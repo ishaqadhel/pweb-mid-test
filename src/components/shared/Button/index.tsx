@@ -6,6 +6,7 @@ enum ButtonVariant {
   'dark',
   'light',
   'primary',
+  'red',
 }
 
 type ButtonProps = {
@@ -18,7 +19,7 @@ export default function Button({
   className,
   disabled: buttonDisabled,
   isLoading,
-  variant = 'dark',
+  variant = 'red',
   ...rest
 }: ButtonProps) {
   const disabled = isLoading || buttonDisabled;
@@ -28,16 +29,14 @@ export default function Button({
       {...rest}
       disabled={disabled}
       className={clsx(
-        'py-2 px-4 rounded font-bold hover:text-primary-400',
-        'border border-gray-600 shadow-sm',
+        'py-2 px-6 rounded font-bold',
+        'border shadow-sm',
         'focus:outline-none focus-visible:text-primary-400',
         {
-          'bg-dark disabled:bg-gray-700 text-white disabled:hover:text-white':
-            variant === 'dark',
-          'bg-white disabled:bg-gray-200 text-dark hover:bg-gray-200 hover:text-dark focus-visible:text-dark border-gray-400 disabled:hover:text-dark':
+          'bg-white disabled:bg-gray-200 text-red-500 hover:bg-gray-50 hover:text-red-500 focus-visible:text-red-500 border-red-400 disabled:hover:text-red-500':
             variant === 'light',
-          'bg-primary-400 text-black hover:bg-primary-400/90 hover:text-black border-primary-500 disabled:hover:bg-primary-400 disabled:brightness-75  focus-visible:text-dark':
-            variant === 'primary',
+          'bg-red-600 text-white hover:bg-red-500 hover:text-white border-red-700 disabled:hover:bg-red-400 disabled:brightness-75':
+            variant === 'red',
         },
         'disabled:cursor-not-allowed',
         !disabled && 'animated-underline',
@@ -45,14 +44,6 @@ export default function Button({
           'relative text-transparent hover:!text-transparent !cursor-wait transition-none',
         className
       )}
-      style={
-        variant === 'primary'
-          ? ({
-              '--clr-primary-400': 'white',
-              '--clr-primary-500': 'white',
-            } as React.CSSProperties)
-          : undefined
-      }
     >
       {isLoading && (
         <div
