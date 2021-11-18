@@ -33,19 +33,19 @@ export default function NavBar() {
                 <div className='items-center hidden space-x-5 md:flex'>
                     <BaseLink
                         href='/'
-                        className='transition duration-500 hover:text-red-500'
+                        className='font-semibold transition duration-500 hover:text-red-500'
                     >
                         Beranda
                     </BaseLink>
                     <BaseLink
                         href='/pricing'
-                        className='transition duration-500 hover:text-red-500'
+                        className='font-semibold transition duration-500 hover:text-red-500'
                     >
                         Pesan Service
                     </BaseLink>
                     <BaseLink
                         href='/'
-                        className='transition duration-500 hover:text-red-500'
+                        className='font-semibold transition duration-500 hover:text-red-500'
                     >
                         Bantuan
                     </BaseLink>

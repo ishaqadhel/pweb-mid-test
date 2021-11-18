@@ -49,11 +49,7 @@ export default function HomePage() {
 
                 {/* Feature Highlight Section */}
                 <section className='py-10 bg-gray-100'>
-                    <div className='grid grid-cols-2 gap-5 text-gray-500 md:grid-cols-5 layout'>
-                        <div className='items-center space-y-2 text-center transition duration-300 hover:text-red-500'>
-                            <GiAutoRepair className='mx-auto text-5xl' />
-                            <p>Perawatan Kendaraan</p>
-                        </div>
+                    <div className='grid grid-cols-2 gap-5 text-gray-500 md:grid-cols-4 layout'>
                         <div className='items-center space-y-2 text-center transition duration-300 hover:text-red-500'>
                             <GiAutoRepair className='mx-auto text-5xl' />
                             <p>Perawatan Kendaraan</p>
@@ -134,6 +130,42 @@ export default function HomePage() {
                     </div>
                 </section>
                 {/* End of Benefit Section */}
+
+                {/* App Section */}
+                <section className='py-10 md:py-20'>
+                    <div className='items-center space-y-10 md:flex md:space-x-5 md:space-y-0 layout'>
+                        <div className='md:w-1/2'>
+                            <NextImage
+                                className='w-full'
+                                src='/images/app.png'
+                                alt='car'
+                                width={723}
+                                height={637}
+                            />
+                        </div>
+                        <div className='space-y-4 md:ml-14 md:w-1/2'>
+                            <p className='text-gray-500'>Aplikasi Mobile</p>
+                            <h1 className='leading-12'>
+                                Pantau Status Perawatan Mobil Anda Lewat
+                                Aplikasi Kami
+                            </h1>
+                            <p className='md:max-w-md'>
+                                Lebih mudah mengelola orderan dimanapun kamu
+                                berjualan baik di social media, di web toko
+                                online atau di marketplace dengan sistem
+                                manajemen yang baik, cukup melalui satu sistem.
+                            </p>
+                            <div>
+                                <BaseLink href='/'>
+                                    <Button variant='red'>
+                                        Download Aplikasi
+                                    </Button>
+                                </BaseLink>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* End of App Section */}
             </main>
         </Layout>
     );
