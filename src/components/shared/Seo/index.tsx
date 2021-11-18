@@ -10,7 +10,7 @@ const defaultMeta = {
     description:
         'Auto2000 Digiroom adalah Dealer Mobil Toyota terbesar di Indonesia yang melayanani jaringan jasa penjualan, perawatan, perbaikan dan penyediaan suku cadang Toyota.',
     url: 'https://pweb-mid-test.ishaqadhel.com',
-    image: 'https://theodorusclarence.com/favicon/large-og.jpg',
+    image: '',
     type: 'website',
     robots: 'follow, index',
 };
@@ -53,7 +53,7 @@ export default function Seo(props: SeoProps) {
             <meta name='image' property='og:image' content={meta.image} />
             {/* Twitter */}
             <meta name='twitter:card' content='summary_large_image' />
-            <meta name='twitter:site' content='@th_clarence' />
+            <meta name='twitter:site' content='@ishaqadhel' />
             <meta name='twitter:title' content={meta.title} />
             <meta name='twitter:description' content={meta.description} />
             <meta name='twitter:image' content={meta.image} />
@@ -71,7 +71,7 @@ export default function Seo(props: SeoProps) {
                     <meta
                         name='author'
                         property='article:author'
-                        content='Theodorus Clarence'
+                        content='Ishaq Adheltyo & Adjie Mahesa'
                     />
                 </>
             )}
