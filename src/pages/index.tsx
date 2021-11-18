@@ -6,6 +6,7 @@ import Layout from '@/components/layout/Base';
 import BaseLink from '@/components/shared/BaseLink';
 import Button from '@/components/shared/Button';
 import CustomLink from '@/components/shared/CustomLink';
+import LiveChat from '@/components/shared/LiveChat';
 import NextImage from '@/components/shared/NextImage';
 import Seo from '@/components/shared/Seo';
 
@@ -13,7 +14,7 @@ export default function HomePage() {
     return (
         <Layout>
             <Seo />
-
+            <LiveChat />
             <main>
                 {/* Header Section */}
                 <section className='py-10 md:py-20'>
