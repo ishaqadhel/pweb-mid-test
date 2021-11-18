@@ -1,6 +1,9 @@
 import * as React from 'react';
+import { AiFillCar } from 'react-icons/ai';
 import { BsArrowRightShort } from 'react-icons/bs';
+import { FaHandshake } from 'react-icons/fa';
 import { GiAutoRepair } from 'react-icons/gi';
+import { GoChecklist } from 'react-icons/go';
 
 import Layout from '@/components/layout/Base';
 import BaseLink from '@/components/shared/BaseLink';
@@ -30,7 +33,7 @@ export default function HomePage() {
                         </div>
                         <div className='space-y-5 md:w-1/2'>
                             <h1 className='text-4xl md:text-6xl'>
-                                We Make Car Repair Hassle Free
+                                We Make Anything Car Related Hassle Free
                             </h1>
                             <p>
                                 Pemberian jasa penjualan, perawatan, perbaikan,
@@ -57,16 +60,16 @@ export default function HomePage() {
                             <p>Perawatan Kendaraan</p>
                         </div>
                         <div className='items-center space-y-2 text-center transition duration-300 hover:text-red-500'>
-                            <GiAutoRepair className='mx-auto text-5xl' />
-                            <p>Perawatan Kendaraan</p>
+                            <AiFillCar className='mx-auto text-5xl' />
+                            <p>Pembelian Kendaraan</p>
                         </div>
                         <div className='items-center space-y-2 text-center transition duration-300 hover:text-red-500'>
-                            <GiAutoRepair className='mx-auto text-5xl' />
-                            <p>Perawatan Kendaraan</p>
+                            <FaHandshake className='mx-auto text-5xl' />
+                            <p>Jual Kendaraan</p>
                         </div>
                         <div className='items-center space-y-2 text-center transition duration-300 hover:text-red-500'>
-                            <GiAutoRepair className='mx-auto text-5xl' />
-                            <p>Perawatan Kendaraan</p>
+                            <GoChecklist className='mx-auto text-5xl' />
+                            <p>Order Suku Cadang</p>
                         </div>
                     </div>
                 </section>
@@ -76,8 +79,11 @@ export default function HomePage() {
                 <section className='py-10 md:py-20'>
                     <div className='space-y-10 layout'>
                         <div className='space-y-2 text-center'>
-                            <p className='text-gray-500'>Benefit From Us</p>
-                            <h2>We Have the Plan for you to Give You Best</h2>
+                            <p className='text-gray-500'>
+                                Dapatkan Keuntungan Terbaik Dari Paket-Paket
+                                Kami
+                            </p>
+                            <h2>We Have the Best Plan for you</h2>
                         </div>
                         <div className='grid grid-cols-1 gap-5 md:grid-cols-3'>
                             <div className='p-5 space-y-4 transition duration-300 border border-gray-100 rounded hover:scale-105 hover:border-red-500'>
