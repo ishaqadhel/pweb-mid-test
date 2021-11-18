@@ -152,16 +152,16 @@ Snippets: `np`
 import * as React from 'react';
 import Seo from '@/components/Seo';
 export default function TestPage() {
-  return (
-    <>
-      <Seo templateTitle='Test' />
-      <main>
-        <section className=''>
-          <div className='layout'></div>
-        </section>
-      </main>
-    </>
-  );
+    return (
+        <>
+            <Seo templateTitle='Test' />
+            <main>
+                <section className=''>
+                    <div className='layout'></div>
+                </section>
+            </main>
+        </>
+    );
 }
 ```
 
@@ -174,7 +174,7 @@ Snippets: `rc`
 ```tsx
 import * as React from 'react';
 export default function Component() {
-  return <div></div>;
+    return <div></div>;
 }
 ```
 
