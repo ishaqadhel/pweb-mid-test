@@ -1,6 +1,5 @@
-// !STARTERCONF Change the siteUrl
 module.exports = {
-    siteUrl: 'https://tsnext-tw.thcl.dev/',
+    siteUrl: 'https://pweb-mid-test.ishaqadhel.com/',
     generateRobotsTxt: true,
     robotsTxtOptions: {
         policies: [{ userAgent: '*', allow: '/' }],
