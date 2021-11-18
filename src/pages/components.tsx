@@ -2,13 +2,13 @@
 import clsx from 'clsx';
 import * as React from 'react';
 
-import Button from '@/components/buttons/Button';
 import Layout from '@/components/layout/Layout';
-import ButtonLink from '@/components/links/ButtonLink';
-import CustomLink from '@/components/links/CustomLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
-import NextImage from '@/components/NextImage';
-import Seo from '@/components/Seo';
+import BaseLink from '@/components/shared/BaseLink';
+import Button from '@/components/shared/Button';
+import ButtonLink from '@/components/shared/ButtonLink';
+import CustomLink from '@/components/shared/CustomLink';
+import NextImage from '@/components/shared/NextImage';
+import Seo from '@/components/shared/Seo';
 
 type Color = typeof colorList[number];
 
@@ -117,23 +117,23 @@ export default function ComponentsPage() {
                 </div>
               </li>
               <li className='space-y-2'>
-                <h2 className='text-lg md:text-xl'>UnstyledLink</h2>
+                <h2 className='text-lg md:text-xl'>BaseLink</h2>
                 <p className={clsx('text-sm !mt-1', textColor)}>
                   No style applied, differentiate internal and outside links,
                   give custom cursor for outside links.
                 </p>
                 <div className='space-x-2'>
-                  <UnstyledLink href='/'>Internal Links</UnstyledLink>
-                  <UnstyledLink href='https://theodorusclarence.com'>
+                  <BaseLink href='/'>Internal Links</BaseLink>
+                  <BaseLink href='https://theodorusclarence.com'>
                     Outside Links
-                  </UnstyledLink>
+                  </BaseLink>
                 </div>
               </li>
               <li className='space-y-2'>
                 <h2 className='text-lg md:text-xl'>CustomLink</h2>
                 <p className={clsx('text-sm !mt-1', textColor)}>
-                  Add styling on top of UnstyledLink, giving a dotted and
-                  animated underline.
+                  Add styling on top of BaseLink, giving a dotted and animated
+                  underline.
                 </p>
                 <div className='space-x-2'>
                   <CustomLink href='/'>Internal Links</CustomLink>

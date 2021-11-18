@@ -1,16 +1,14 @@
 import clsx from 'clsx';
 
-import UnstyledLink, {
-  UnstyledLinkProps,
-} from '@/components/links/UnstyledLink';
+import BaseLink, { BaseLinkProps } from '@/components/shared/BaseLink';
 
 export default function CustomLink({
   children,
   className = '',
   ...rest
-}: UnstyledLinkProps) {
+}: BaseLinkProps) {
   return (
-    <UnstyledLink
+    <BaseLink
       {...rest}
       className={clsx(
         'custom-link inline-flex items-center font-bold animated-underline',
@@ -20,6 +18,6 @@ export default function CustomLink({
       )}
     >
       {children}
-    </UnstyledLink>
+    </BaseLink>
   );
 }

@@ -1,8 +1,6 @@
 import clsx from 'clsx';
 
-import UnstyledLink, {
-  UnstyledLinkProps,
-} from '@/components/links/UnstyledLink';
+import BaseLink, { BaseLinkProps } from '@/components/shared/BaseLink';
 
 enum ButtonVariant {
   'dark',
@@ -12,7 +10,7 @@ enum ButtonVariant {
 
 type ButtonLinkProps = {
   variant?: keyof typeof ButtonVariant;
-} & UnstyledLinkProps;
+} & BaseLinkProps;
 
 export default function ButtonLink({
   children,
@@ -21,7 +19,7 @@ export default function ButtonLink({
   ...rest
 }: ButtonLinkProps) {
   return (
-    <UnstyledLink
+    <BaseLink
       {...rest}
       className={clsx(
         'py-2 px-4 inline-block rounded font-bold hover:text-primary-400 animated-underline',
@@ -46,6 +44,6 @@ export default function ButtonLink({
       }
     >
       {children}
-    </UnstyledLink>
+    </BaseLink>
   );
 }
