@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { GiAutoRepair } from 'react-icons/gi';
 
 import Layout from '@/components/layout/Base';
 import BaseLink from '@/components/shared/BaseLink';
@@ -43,6 +44,33 @@ export default function HomePage() {
                     </div>
                 </section>
                 {/* End of Header Section */}
+
+                {/* Feature Highlight Section */}
+                <section className='py-10 bg-gray-100'>
+                    <div className='grid grid-cols-2 gap-5 text-gray-500 md:grid-cols-5 layout'>
+                        <div className='items-center space-y-2 text-center transition duration-300 hover:text-red-500'>
+                            <GiAutoRepair className='mx-auto text-5xl' />
+                            <p>Perawatan Kendaraan</p>
+                        </div>
+                        <div className='items-center space-y-2 text-center transition duration-300 hover:text-red-500'>
+                            <GiAutoRepair className='mx-auto text-5xl' />
+                            <p>Perawatan Kendaraan</p>
+                        </div>
+                        <div className='items-center space-y-2 text-center transition duration-300 hover:text-red-500'>
+                            <GiAutoRepair className='mx-auto text-5xl' />
+                            <p>Perawatan Kendaraan</p>
+                        </div>
+                        <div className='items-center space-y-2 text-center transition duration-300 hover:text-red-500'>
+                            <GiAutoRepair className='mx-auto text-5xl' />
+                            <p>Perawatan Kendaraan</p>
+                        </div>
+                        <div className='items-center space-y-2 text-center transition duration-300 hover:text-red-500'>
+                            <GiAutoRepair className='mx-auto text-5xl' />
+                            <p>Perawatan Kendaraan</p>
+                        </div>
+                    </div>
+                </section>
+                {/* End of Feature Highlight Section */}
             </main>
         </Layout>
     );
