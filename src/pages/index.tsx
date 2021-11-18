@@ -167,6 +167,77 @@ export default function HomePage() {
                 </section>
                 {/* End of App Section */}
 
+                {/* Car Show Section */}
+                <section className='py-10 md:py-20'>
+                    <div className='space-y-10 layout'>
+                        <div className='space-y-2 text-center'>
+                            <p className='text-gray-500'>Only The Best Cars</p>
+                            <h1>Our Vehicle Fleet</h1>
+                        </div>
+                        <div className='grid grid-cols-1 gap-5 md:grid-cols-3'>
+                            <NextImage
+                                className='w-full transition duration-300 hover:scale-105'
+                                imgClassName='rounded-xl'
+                                src='/images/car/alphard.png'
+                                alt='car'
+                                width={4096}
+                                height={2306}
+                            />
+                            <NextImage
+                                className='w-full transition duration-300 hover:scale-105'
+                                imgClassName='rounded-xl'
+                                src='/images/car/alphard.png'
+                                alt='car'
+                                width={4096}
+                                height={2306}
+                            />
+                            <NextImage
+                                className='w-full transition duration-300 hover:scale-105'
+                                imgClassName='rounded-xl'
+                                src='/images/car/alphard.png'
+                                alt='car'
+                                width={4096}
+                                height={2306}
+                            />
+                            <NextImage
+                                className='w-full transition duration-300 hover:scale-105'
+                                imgClassName='rounded-xl'
+                                src='/images/car/alphard.png'
+                                alt='car'
+                                width={4096}
+                                height={2306}
+                            />
+                            <NextImage
+                                className='w-full transition duration-300 hover:scale-105'
+                                imgClassName='rounded-xl'
+                                src='/images/car/alphard.png'
+                                alt='car'
+                                width={4096}
+                                height={2306}
+                            />
+                            <NextImage
+                                className='w-full transition duration-300 hover:scale-105'
+                                imgClassName='rounded-xl'
+                                src='/images/car/alphard.png'
+                                alt='car'
+                                width={4096}
+                                height={2306}
+                            />
+                        </div>
+                        <div className='text-center'>
+                            <BaseLink href='/'>
+                                <Button variant='light'>
+                                    <div className='flex items-center space-x-1'>
+                                        <p>Lihat Mobil Lainnya</p>
+                                        <BsArrowRightShort />
+                                    </div>
+                                </Button>
+                            </BaseLink>
+                        </div>
+                    </div>
+                </section>
+                {/* End of Car Show Section */}
+
                 {/* Closing Box Section */}
                 <section className='py-8 md:py-14'>
                     <div className='p-4 bg-red-600 rounded-xl layout md:p-8'>
