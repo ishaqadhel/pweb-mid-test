@@ -166,6 +166,42 @@ export default function HomePage() {
                     </div>
                 </section>
                 {/* End of App Section */}
+
+                {/* Closing Box Section */}
+                <section className='py-8 md:py-14'>
+                    <div className='p-4 bg-red-600 rounded-xl layout md:p-8'>
+                        <div className='items-center md:flex space-y-7'>
+                            <div className='hidden text-center md:block md:w-1/2 md:mr-4'>
+                                <NextImage
+                                    className='w-full'
+                                    src='/images/download-now.png'
+                                    alt='download-now'
+                                    width={1061}
+                                    height={508}
+                                />
+                            </div>
+                            <div className='space-y-6 text-white md:w-1/2 md:space-y-10'>
+                                <div className='space-y-2'>
+                                    <h1 className='text-center md:text-left'>
+                                        Siap untuk mencoba?
+                                    </h1>
+                                    <p>
+                                        Segera rawat mobilmu demi kenyamanan dan
+                                        kelancaran bepergian.
+                                    </p>
+                                </div>
+                                <div>
+                                    <BaseLink href='/'>
+                                        <Button variant='light'>
+                                            Pesan Jasa Sekarang
+                                        </Button>
+                                    </BaseLink>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* End of Closing Box Section */}
             </main>
         </Layout>
     );
