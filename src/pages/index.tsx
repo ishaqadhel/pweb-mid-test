@@ -161,10 +161,9 @@ export default function HomePage() {
                                 Aplikasi Kami
                             </h1>
                             <p className='md:max-w-md'>
-                                Lebih mudah mengelola orderan dimanapun kamu
-                                berjualan baik di social media, di web toko
-                                online atau di marketplace dengan sistem
-                                manajemen yang baik, cukup melalui satu sistem.
+                                Lebih mudah mengelola orderan service mobil
+                                dimanapun kamu berada dengan sistem manajemen
+                                yang baik, cukup melalui satu sistem.
                             </p>
                             <div>
                                 <BaseLink href='/'>
