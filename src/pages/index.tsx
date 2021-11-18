@@ -181,7 +181,10 @@ export default function HomePage() {
                 <section className='py-10 md:py-20'>
                     <div className='space-y-10 layout'>
                         <div className='space-y-2 text-center'>
-                            <p className='text-gray-500'>Only The Best Cars</p>
+                            <p className='text-gray-500'>
+                                Mobil-Mobil Kualitas Terbaik Yang Bisa Kamu
+                                Dapatkan
+                            </p>
                             <h1>Our Vehicle Fleet</h1>
                         </div>
                         <div className='grid grid-cols-1 gap-5 md:grid-cols-3'>
@@ -196,7 +199,7 @@ export default function HomePage() {
                             <NextImage
                                 className='w-full transition duration-300 hover:scale-105'
                                 imgClassName='rounded-xl'
-                                src='/images/car/alphard.png'
+                                src='/images/car/carry.png'
                                 alt='car'
                                 width={4096}
                                 height={2306}
@@ -204,7 +207,7 @@ export default function HomePage() {
                             <NextImage
                                 className='w-full transition duration-300 hover:scale-105'
                                 imgClassName='rounded-xl'
-                                src='/images/car/alphard.png'
+                                src='/images/car/yaris.png'
                                 alt='car'
                                 width={4096}
                                 height={2306}
@@ -212,7 +215,7 @@ export default function HomePage() {
                             <NextImage
                                 className='w-full transition duration-300 hover:scale-105'
                                 imgClassName='rounded-xl'
-                                src='/images/car/alphard.png'
+                                src='/images/car/avanza-bg.jpg'
                                 alt='car'
                                 width={4096}
                                 height={2306}
@@ -220,7 +223,7 @@ export default function HomePage() {
                             <NextImage
                                 className='w-full transition duration-300 hover:scale-105'
                                 imgClassName='rounded-xl'
-                                src='/images/car/alphard.png'
+                                src='/images/car/fortuner-bg.jpg'
                                 alt='car'
                                 width={4096}
                                 height={2306}
@@ -228,7 +231,7 @@ export default function HomePage() {
                             <NextImage
                                 className='w-full transition duration-300 hover:scale-105'
                                 imgClassName='rounded-xl'
-                                src='/images/car/alphard.png'
+                                src='/images/car/innova-bg.jpg'
                                 alt='car'
                                 width={4096}
                                 height={2306}
